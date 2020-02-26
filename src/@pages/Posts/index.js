@@ -34,7 +34,7 @@ const Posts = props => {
               <Card
                 title={val.title}
                 actions={[
-                  <Link to={`/${val.id}/albums`}>
+                  <Link to={`/${val.id}/comments`}>
                     <Icon key="message" type="message" />
                   </Link>,
                   <Link to={`/${val.id}/albums`}>

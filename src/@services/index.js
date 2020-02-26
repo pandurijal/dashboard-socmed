@@ -10,6 +10,10 @@ export const getPostsService = id => {
   return axios.get(`${root}/users/${id}/posts`);
 };
 
+export const getCommentsService = id => {
+  return axios.get(`${root}/posts/${id}/comments`);
+};
+
 export const deletePostService = id => {
   return axios.delete(`${root}/posts/${id}`);
 };
