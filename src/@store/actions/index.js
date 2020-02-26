@@ -1,3 +1,3 @@
-import { getUserListAction } from './userAction';
+import { getUserListAction, getPostsAction } from './userAction';
 
-export { getUserListAction };
+export { getUserListAction, getPostsAction };

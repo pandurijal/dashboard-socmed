@@ -1,15 +1,8 @@
 import React from 'react';
-import { Layout } from 'antd';
-import UserList from './../UserList';
-
-const Content = Layout.Content;
+import Users from './../Users';
 
 const Dashboard = () => {
-  return (
-    <Content className="container">
-      <UserList />
-    </Content>
-  );
+  return <Users />;
 };
 
 export default Dashboard;
