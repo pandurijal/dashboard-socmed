@@ -2,13 +2,19 @@ import React, { useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Row, Col, Card, Icon } from 'antd';
-import { getUserListAction } from '../../@store/actions';
+import { getAlbumsAction } from '../../@store/actions';
 
-const UserList = props => {
-  const { userList, getUserListAction } = props;
+const Albums = props => {
+  const {
+    albumList,
+    getAlbumsAction,
+    match: { params }
+  } = props;
+
+  const idUser = params.id;
 
   const fetchData = useCallback(() => {
-    getUserListAction();
+    getAlbumsAction(idUser);
   }, []);
 
   useEffect(() => {
@@ -18,26 +24,17 @@ const UserList = props => {
   return (
     <div>
       <Row gutter={[16, 16]}>
-        {!!userList.length &&
-          userList.map((val, idx) => (
+        {!!albumList.length &&
+          albumList.map((val, idx) => (
             <Col span={12} key={val.id}>
               <Card
                 actions={[
-                  <Link to={`/${val.id}/posts`}>
-                    <Icon key="read" type="read" />
-                  </Link>,
                   <Link to={`/${val.id}/albums`}>
                     <Icon key="picture" type="picture" />
                   </Link>
                 ]}
               >
-                <p>
-                  {val.name} | <b>{val.username}</b>
-                </p>
-                <p>
-                  {val.email} | <a href={val.website}>{val.website}</a>
-                </p>
-                <p>{val.phone}</p>
+                <p>{val.title}</p>
               </Card>
             </Col>
           ))}
@@ -47,9 +44,10 @@ const UserList = props => {
 };
 
 const mapStateToProps = state => {
+  console.log({ state });
   return {
-    userList: state.getUserListReducer
+    albumList: state.getAlbumsReducer
   };
 };
 
-export default connect(mapStateToProps, { getUserListAction })(UserList);
+export default connect(mapStateToProps, { getAlbumsAction })(Albums);

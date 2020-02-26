@@ -12,7 +12,6 @@ const PostList = props => {
   } = props;
 
   const idUser = params.id;
-  console.log({ postList, idUser });
 
   const fetchData = useCallback(() => {
     getPostsAction(idUser);
@@ -28,12 +27,10 @@ const PostList = props => {
         {!!postList.length &&
           postList.map((val, idx) => (
             <Col span={24} key={val.id}>
-              <Link to={`/${val.id}/post`}>
-                <Card>
-                  <p>{val.title}</p>
-                  <p>{val.body}</p>
-                </Card>
-              </Link>
+              <Card>
+                <p>{val.title}</p>
+                <p>{val.body}</p>
+              </Card>
             </Col>
           ))}
       </Row>
@@ -42,7 +39,6 @@ const PostList = props => {
 };
 
 const mapStateToProps = state => {
-  console.log({ state });
   return {
     postList: state.getPostsReducer
   };
