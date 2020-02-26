@@ -1,10 +1,10 @@
 import Dashboard from './../@pages/Dashboard';
-import UserPost from './../@pages/UserPost';
+import Posts from './../@pages/Posts';
 import Albums from './../@pages/Albums';
 
 const routes = [
   { path: '/', component: Dashboard },
-  { path: '/:id/posts', component: UserPost },
+  { path: '/:id/posts', component: Posts },
   { path: '/:id/albums', component: Albums }
 ];
 
