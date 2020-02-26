@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/pandurijal.github.io/dashboard-socmed/static/css/main.dc099125.chunk.css",
+    "main.js": "/pandurijal.github.io/dashboard-socmed/static/js/main.6b9ec1b5.chunk.js",
+    "main.js.map": "/pandurijal.github.io/dashboard-socmed/static/js/main.6b9ec1b5.chunk.js.map",
+    "runtime-main.js": "/pandurijal.github.io/dashboard-socmed/static/js/runtime-main.b4633bba.js",
+    "runtime-main.js.map": "/pandurijal.github.io/dashboard-socmed/static/js/runtime-main.b4633bba.js.map",
+    "static/css/2.d88ce3aa.chunk.css": "/pandurijal.github.io/dashboard-socmed/static/css/2.d88ce3aa.chunk.css",
+    "static/js/2.56c9d4b6.chunk.js": "/pandurijal.github.io/dashboard-socmed/static/js/2.56c9d4b6.chunk.js",
+    "static/js/2.56c9d4b6.chunk.js.map": "/pandurijal.github.io/dashboard-socmed/static/js/2.56c9d4b6.chunk.js.map",
+    "index.html": "/pandurijal.github.io/dashboard-socmed/index.html",
+    "precache-manifest.f88c81022bfaf772dde25a2edb3d742a.js": "/pandurijal.github.io/dashboard-socmed/precache-manifest.f88c81022bfaf772dde25a2edb3d742a.js",
+    "service-worker.js": "/pandurijal.github.io/dashboard-socmed/service-worker.js",
+    "static/css/2.d88ce3aa.chunk.css.map": "/pandurijal.github.io/dashboard-socmed/static/css/2.d88ce3aa.chunk.css.map",
+    "static/css/main.dc099125.chunk.css.map": "/pandurijal.github.io/dashboard-socmed/static/css/main.dc099125.chunk.css.map",
+    "static/js/2.56c9d4b6.chunk.js.LICENSE.txt": "/pandurijal.github.io/dashboard-socmed/static/js/2.56c9d4b6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4633bba.js",
+    "static/css/2.d88ce3aa.chunk.css",
+    "static/js/2.56c9d4b6.chunk.js",
+    "static/css/main.dc099125.chunk.css",
+    "static/js/main.6b9ec1b5.chunk.js"
+  ]
+}
