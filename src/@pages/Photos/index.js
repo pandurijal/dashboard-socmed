@@ -2,19 +2,19 @@ import React, { useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Row, Col, Card, Icon } from 'antd';
-import { getAlbumsAction } from '../../@store/actions';
+import { getPhotosAction } from '../../@store/actions';
 
-const Albums = props => {
+const Photos = props => {
   const {
-    albumList,
-    getAlbumsAction,
+    photoList,
+    getPhotosAction,
     match: { params }
   } = props;
 
   const idUser = params.id;
 
   const fetchData = useCallback(() => {
-    getAlbumsAction(idUser);
+    getPhotosAction(idUser);
   }, []);
 
   useEffect(() => {
@@ -24,8 +24,8 @@ const Albums = props => {
   return (
     <div>
       <Row gutter={[16, 16]}>
-        {!!albumList.length &&
-          albumList.map((val, idx) => (
+        {!!photoList.length &&
+          photoList.map((val, idx) => (
             <Col span={12} key={val.id}>
               <Card
                 actions={[
@@ -46,8 +46,8 @@ const Albums = props => {
 const mapStateToProps = state => {
   console.log({ state });
   return {
-    albumList: state.getAlbumsReducer
+    photoList: state.getPhotosReducer
   };
 };
 
-export default connect(mapStateToProps, { getAlbumsAction })(Albums);
+export default connect(mapStateToProps, { getPhotosAction })(Photos);

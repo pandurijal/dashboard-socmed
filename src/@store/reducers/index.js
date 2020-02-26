@@ -5,7 +5,8 @@ import {
   GET_POSTS,
   DELETE_POST,
   GET_COMMENTS,
-  GET_ALBUMS
+  GET_ALBUMS,
+  GET_PHOTOS
 } from './../types';
 
 const getUserListReducer = (state = [], action) => {
@@ -53,12 +54,22 @@ const getAlbumsReducer = (state = [], action) => {
   }
 };
 
+const getPhotosReducer = (state = [], action) => {
+  switch (action.type) {
+    case GET_PHOTOS:
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
 const reducers = combineReducers({
   getUserListReducer,
   getPostsReducer,
   deletePostReducer,
   getCommentsReducer,
-  getAlbumsReducer
+  getAlbumsReducer,
+  getPhotosReducer
 });
 
 export default reducers;

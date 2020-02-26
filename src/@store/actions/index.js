@@ -3,14 +3,16 @@ import {
   GET_POSTS,
   DELETE_POST,
   GET_COMMENTS,
-  GET_ALBUMS
+  GET_ALBUMS,
+  GET_PHOTOS
 } from './../types';
 import {
   getUserListService,
   getPostsService,
   deletePostService,
   getCommentsService,
-  getAlbumsService
+  getAlbumsService,
+  getPhotosService
 } from '../../@services';
 
 export const getUserListAction = () => async dispatch => {
@@ -91,6 +93,22 @@ export const getAlbumsAction = id => async dispatch => {
   if (res) {
     dispatch({
       type: GET_ALBUMS,
+      payload: res.data
+    });
+  }
+};
+
+export const getPhotosAction = id => async dispatch => {
+  let res;
+  try {
+    res = await getPhotosService(id);
+  } catch (error) {
+    console.error(error);
+  }
+
+  if (res) {
+    dispatch({
+      type: GET_PHOTOS,
       payload: res.data
     });
   }

@@ -21,3 +21,7 @@ export const deletePostService = id => {
 export const getAlbumsService = id => {
   return axios.get(`${root}/users/${id}/albums`);
 };
+
+export const getPhotosService = id => {
+  return axios.get(`${root}/albums/${id}/photos`);
+};
