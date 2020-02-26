@@ -1,15 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Switch, withRouter } from 'react-router-dom';
+import { Layout } from 'antd';
+
+import Dashboard from './@pages/Dashboard/';
+
+import routes from './@routes';
+
+import 'antd/dist/antd.css';
 import './App.css';
 
-import UserList from './@pages/UserList/';
+const Content = Layout.Content;
 
 function App() {
   return (
     <div className="App">
-      <UserList />
+      <Content className="container">
+        <Switch>
+          {routes.map((route, idx) => (
+            <Route exact key={`${route.path} - ${idx}`} {...route} />
+          ))}
+        </Switch>
+      </Content>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);

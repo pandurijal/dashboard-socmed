@@ -1,36 +1,44 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { Row, Col, Card } from 'antd';
 import { getUserListAction } from '../../@store/actions';
 
-// const UserList = props => {
-//   useEffect(() => {
-//     async function fetchData() {
-//       await props.getUserListAction();
-//       console.log({ props: props.userList });
-//     }
+const UserList = props => {
+  const { userList, getUserListAction } = props;
 
-//     fetchData();
-//   });
+  const fetchData = useCallback(() => {
+    getUserListAction();
+  }, []);
 
-//   return <div>UserList</div>;
-// };
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
-class UserList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  async componentDidMount() {
-    await this.props.getUserListAction();
-    console.log({ user: this.props.userList });
-  }
-  render() {
-    return <div>UserList</div>;
-  }
-}
+  console.log({ userList });
 
-const mapStateToProps = state => ({
-  userList: state.getUserListReducer
-});
+  return (
+    <div>
+      <Row>
+        {!!userList.length &&
+          userList.map((val, idx) => (
+            <Col span={6} key={val.id}>
+              <Link to={`/${val.id}/post`}>
+                <Card>
+                  <p>{val.name}</p>
+                </Card>
+              </Link>
+            </Col>
+          ))}
+      </Row>
+    </div>
+  );
+};
+
+const mapStateToProps = state => {
+  return {
+    userList: state.getUserListReducer
+  };
+};
 
 export default connect(mapStateToProps, { getUserListAction })(UserList);

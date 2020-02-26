@@ -6,6 +6,6 @@ export const getUserListAction = () => async dispatch => {
 
   dispatch({
     type: GET_USER_LIST,
-    payload: res
+    payload: res.data
   });
 };
