@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2ec1c5c8958f5614a71cd595bb4d1fd",
+    "revision": "246b8a3163c2d5fa3fc6768adaeb5590",
     "url": "/dashboard-socmed/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dashboard-socmed/static/css/2.d88ce3aa.chunk.css"
   },
   {
-    "revision": "c556ae80b99aa9b8758c",
+    "revision": "99b949bfd5a34c286d07",
     "url": "/dashboard-socmed/static/css/main.dc099125.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dashboard-socmed/static/js/2.2d10ab1e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c556ae80b99aa9b8758c",
-    "url": "/dashboard-socmed/static/js/main.325c63b6.chunk.js"
+    "revision": "99b949bfd5a34c286d07",
+    "url": "/dashboard-socmed/static/js/main.f5687ce3.chunk.js"
   },
   {
     "revision": "e80b414428aa8b8a5849",

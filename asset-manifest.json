@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dashboard-socmed/static/css/main.dc099125.chunk.css",
-    "main.js": "/dashboard-socmed/static/js/main.325c63b6.chunk.js",
-    "main.js.map": "/dashboard-socmed/static/js/main.325c63b6.chunk.js.map",
+    "main.js": "/dashboard-socmed/static/js/main.f5687ce3.chunk.js",
+    "main.js.map": "/dashboard-socmed/static/js/main.f5687ce3.chunk.js.map",
     "runtime-main.js": "/dashboard-socmed/static/js/runtime-main.0a4fe69c.js",
     "runtime-main.js.map": "/dashboard-socmed/static/js/runtime-main.0a4fe69c.js.map",
     "static/css/2.d88ce3aa.chunk.css": "/dashboard-socmed/static/css/2.d88ce3aa.chunk.css",
     "static/js/2.2d10ab1e.chunk.js": "/dashboard-socmed/static/js/2.2d10ab1e.chunk.js",
     "static/js/2.2d10ab1e.chunk.js.map": "/dashboard-socmed/static/js/2.2d10ab1e.chunk.js.map",
     "index.html": "/dashboard-socmed/index.html",
-    "precache-manifest.df86d5a2002186dc93da3952aa7c72cf.js": "/dashboard-socmed/precache-manifest.df86d5a2002186dc93da3952aa7c72cf.js",
+    "precache-manifest.c8e0f80d94fb08208cd82c1e81d2ca99.js": "/dashboard-socmed/precache-manifest.c8e0f80d94fb08208cd82c1e81d2ca99.js",
     "service-worker.js": "/dashboard-socmed/service-worker.js",
     "static/css/2.d88ce3aa.chunk.css.map": "/dashboard-socmed/static/css/2.d88ce3aa.chunk.css.map",
     "static/css/main.dc099125.chunk.css.map": "/dashboard-socmed/static/css/main.dc099125.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d88ce3aa.chunk.css",
     "static/js/2.2d10ab1e.chunk.js",
     "static/css/main.dc099125.chunk.css",
-    "static/js/main.325c63b6.chunk.js"
+    "static/js/main.f5687ce3.chunk.js"
   ]
 }

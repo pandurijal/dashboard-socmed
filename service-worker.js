@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dashboard-socmed/precache-manifest.df86d5a2002186dc93da3952aa7c72cf.js"
+  "/dashboard-socmed/precache-manifest.c8e0f80d94fb08208cd82c1e81d2ca99.js"
 );
 
 self.addEventListener('message', (event) => {
